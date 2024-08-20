@@ -1,0 +1,736 @@
+/* #wrap{position: fixed;
+            width: 100%; height: 100%;}
+ */
+#header{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+}
+.logo{
+position: absolute;
+left: 50px; top: 50%; transform: translate(0, -50%);
+}
+.open{
+    position: absolute;
+    display: none;
+}
+.gnb{
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    display: flex;
+}
+.gnb li{
+    margin-right: 100px;
+    transition: all 0.1s;
+    width: 8vw;/*  width: 100px; */
+    text-align: center;
+}
+.gnb li:hover{
+    color: #e30613;
+    font-weight: 600;
+}
+.gnb li:last-child{margin-right: 0;}
+.util{
+    display: flex;
+    position: absolute;
+    right: 50px; top: 50%; transform: translateY(-50%);
+    width: auto;
+}
+.util li{
+    margin-right: 50px;
+}
+.util li:last-child{margin-right: 0;}
+
+#mainVisual{
+    width: 100%;
+    height: 750px;
+/*     background: url(../img/mv.png) no-repeat;
+    background-size: cover; */
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+
+.slider{
+    position: relative;
+}
+ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.slider li{
+    float: left;
+    width: 700px; height: 400px;
+    color: #fff;
+    font-size: 120px;
+}
+.btn{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.btn button{
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    border-top: 5px solid #e30613;
+    border-right: 5px solid #e30613;
+    width: 40px; height: 40px;
+}
+.btn .prv{
+    transform: rotate(-135deg);
+    float: left;
+    margin-left: 70px;
+}
+.btn .nxt{
+    transform: rotate(45deg);
+    float: right;
+    margin-right: 70px;
+}
+
+
+
+
+
+
+
+
+
+.m_mv{display: none;}
+.mvlogo{
+position: absolute;
+top: 50%; right: 100px; transform: translateY(-50%);
+}
+.mvlogo img{
+    height: 200px; width: auto;
+}
+#mainVisual p{
+    position: absolute;
+    bottom: -30px; right: 0;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    color: #1f1c18;
+}
+#container{width: 100%;}
+.content1{
+    margin: 400px auto; width: calc(100% - 300px); position: relative;
+}
+.content1 h2{
+    font-size: 60px;
+    color: #637a8e;
+    font-weight: 500;
+    width: auto;
+    position: absolute; 
+    top: -80px; left: 200px;
+}
+.vd{
+    width: 80%;
+    height: 730px;
+    margin: 0 auto;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.vd iframe{width: 100%; height: 100%;}
+.box{
+    position: absolute;
+    width: 100%; height: 450px; top: 1700px;
+    background-color: #b7ccde;
+    z-index: -1;
+}
+.con1_txt{
+    color: #637a8e; font-size: 36px;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    top: 1950px;
+}
+.con1_txt .smft{font-size: 18px;}
+.con1_txt .arrow{color: #e30613;}
+
+.content2{
+    width: 100%;
+    height: 400px;
+    background-color: #b7ccde;
+    background: url(../img/배너.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+}
+.content2 div{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+.content2 p{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 150px;
+    font-weight: 400;
+}
+.content2 p .b_txt{color: #e30613; font-size: 40px;}
+.content2 p .s_txt{font-size: 18px; transition: all 0.2s;}
+.content2 p .r_txt{color: #e30613;}
+
+.content3{
+    width: 100%;
+    margin: 300px auto;
+    position:relative;
+}
+
+.con3_h2{
+    display: flex;
+position: absolute;
+    left: 50%; transform: translateX(-50%);
+    font-size: 24px;
+    color: #e30613;
+    font-weight: 500;
+}
+.con3_h2 li:last-child{margin-right: 0;}
+.con3_h2 li{
+    margin-right: 100px;
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+.con3_h2 li:hover{
+    opacity: 1;
+}
+.con3_h2 .on{
+    opacity: 1;
+}
+.con3_h2 .on span{
+width: 100%;
+}
+
+.con3_h2 span {
+    display: block;
+    border-bottom: 4px solid  #e30613;
+    font-size: 0;
+    line-height: 10px;
+    transition: all 0.5s;
+    width: 0;
+}
+.con3_h2 li:hover span{
+    width: 100%;
+    opacity: 1;
+}
+.content3 .con3in{
+    width: calc(100% - 300px);
+margin: 0 auto;
+}
+.con3_list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+.con3_list li{
+    width: calc(33.33% - 30px);
+    height: 500px;
+    overflow: hidden;
+}
+.con3_list li div{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.con3_list li img{
+    width: 100%;
+    height: 150%;
+    transition: all 0.5s;
+    position: absolute;
+    object-fit: cover;
+    top: -30%;
+    left: 0;
+}
+.con3_list li img:hover{
+    transform: scale(1.1);
+}
+.con3_list h2{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px; margin-bottom: 10px;
+    color: #1f1c18;
+}
+.con3_list p{
+    font-size: 18px;
+    color: #1f1c18;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: 500;
+}
+#footer{
+    width: 100%;
+    height: 800px;
+    background-color: #e30613;
+    position: relative;
+}
+#footer img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+.f_line{
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    width: 100%;
+    top: 50%; transform: translateY(-50%);
+    font-size: 0;
+}
+.ftin{
+    width: calc(100% - 300px);
+    margin:  0 auto;
+    position: relative;
+    color: #fff;
+    opacity: 0.9;
+    height: 100%;
+}
+.ftxt_l{
+    position: absolute;
+    top: 150px;
+    line-height: 25px;
+}
+.ftxt_l li{
+    margin-bottom: 250px;
+}
+.ftxt_l li:last-child{margin-bottom: 0;}
+
+.ftxt_c{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    line-height: 50px;
+    top: 150px;
+}
+
+.ftxt_c h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.ftxt_c ul{
+    margin-right: 3vw;
+    width: 100px;
+}
+.f_sns{
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+.f_sns ul a{
+    display: flex;
+}
+.f_sns ul a li{
+    width: 50px; height: 50px;
+    margin-right: 30px;
+    font-size: 0;
+    transition: all 0.3s;
+}
+.bold{font-weight: 600;}
+.f_sns ul a li:hover{
+    transform: scale(1.2);
+}
+.f_sns ul li:nth-child(1){
+    background: url(../img/f_sns.png) no-repeat 1px 0;
+}
+.f_sns ul li:nth-child(2){
+    background: url(../img/f_sns.png) no-repeat -60px 0;
+}
+.f_sns ul li:nth-child(3){
+    background: url(../img/f_sns.png) no-repeat -122px 0;
+}
+.f_sns ul li:nth-child(4){
+    background: url(../img/f_sns.png) no-repeat -183px 0;
+}
+.top{
+    position: fixed;
+    bottom: 15px; right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #e30613;
+    line-height: 50px;
+    border-radius: 100%;
+    color: #e30613;
+    transition: all 0.2s;
+}
+.top:hover{
+    color: #fff;
+    background-color: #e30613;
+}
+.mt_bg{display: none;}
+.f_linetm{display: none;}
+.mobile_bg{display: none;}
+.mobile{display: none;}
+#m_nav{display: none;}
+/************************************************************************************************ 1920 pc끝 */
+/************************************************************************************************ 1500 시작 */
+@media all and (max-width: 1500px){
+    #mainVisual{
+        height: 650px;
+    }
+    .mvlogo img{
+        height: 150px;
+    }
+    #mainVisual p{
+        font-size: 16px;
+    }
+    .content1 h2{
+        font-size: 48px;
+        left: 150px;
+    }
+    .vd{
+        height: 600px;
+    }
+    .box{
+    top: 1400px;
+    }
+    .con1_txt{top: 1700px;}
+    .con3_list li{
+        height: 400px;
+    }
+    .con3_list li div{
+        height: 200px;
+    }
+    .con3_list h2{
+        font-size: 24px;
+    }
+    .con3_list p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .ftin{
+        font-size: 0.8em;
+    }
+    .f_sns ul a li{
+        margin-right: 10px;
+    }
+    .f_sns{
+        top: 300px;
+    }
+    .ftxt_l{top: 250px;}
+    .ftxt_l li{margin-bottom: 150px;}
+    .ftxt_c h4{
+        font-size: 18px;
+    }
+    .ftxt_c{
+        line-height: 30px;
+    }
+    .gnb li{margin-right: 50px;}
+}
+/************************************************************** 1500 끝 */
+/************************************************************** 1220 시작 */
+@media all and (max-width: 1220px){
+    .gnb li{
+        margin-right: 30px;
+    }
+    .mvlogo img{
+        height: 130px;
+    }
+    #mainVisual p{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    #mainVisual{height: 500px;}
+    .content1{margin: 300px auto 400px auto; width: calc(100% - 200px);}
+    .content1 h2{font-size: 40px; top: -50px; left: 100px;}
+    .vd{
+        height: 405px; width: 90%;
+    }
+    .box{
+        top: 1000px;
+        height: 350px;
+        }
+        .con1_txt{
+            top: 1245px;
+            font-size: 24px;
+        }
+        .con1_txt .smft{font-size: 14px;}
+        .content2{height: 300px;}
+        .content2 p{padding-top: 90px; font-size: 28px;}
+        .content2 p .b_txt{font-size: 36px;}
+        .content2 p .s_txt{font-size: 14px;}
+        .con3_h2{font-size: 18px;}
+        .content3 .con3in{width: calc(100% - 100px);}
+        .con3_list p{font-size: 13px;}
+        
+}
+/************************************************************** 1220 끝 */
+/************************************************************** 950시작 */
+@media all and (max-width: 950px){
+
+    .gnb li{margin-right: 15px;}
+    .mvlogo{top: 50%;}
+    .mvlogo img{
+        height: 100px;
+    }
+    #mainVisual p{display: none;}
+    .content1{width: calc(100% - 100px);}
+    .content1 h2{font-size: 36px; top: -50px; left: 50px;}
+    .ftin{width: calc(100% - 100px);}
+
+}
+/************************************************************** 950끝 */
+/************************************************************** 768 시작 */
+@media all and (max-width: 768px){
+    .util li:last-child{
+        display: none;
+    }
+    .util{right: 0}
+    .gnb{
+        left: 80%;
+    }
+    .gnb li:nth-child(1){
+        display: none;
+    }
+    .gnb li:nth-child(3){
+        display: none;
+    }
+    .gnb li:nth-child(4){
+        display: none;
+    }
+    .gnb li:nth-child(5){
+        display: none;
+    }
+    .gnb li:nth-child(6){
+        display: none;
+    }
+    #mainVisual{
+        background: none;
+        width: 100%;
+    }
+    .m_mv{
+        display: block;
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .m_mv img{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+    }
+    .mvlogo{top: 45%; left: 10%;}
+    .mvlogo img{
+        height: 80px;
+    }
+    #mainVisual p{
+        font-size: 14px;
+        color: #fff;
+        font-weight: 400;
+    }
+    .content1{margin: 300px auto 400px auto; width: calc(100% - 50px);}
+    .vd{
+        height: 300px; width: 90%;
+    }
+    .box{
+        top: 950px;
+        height: 300px;
+        }
+        .con1_txt{
+            top: 1150px;
+            font-size: 20px;
+        }
+        .con1_txt .smft{font-size: 12px;}
+    .content1 h2{font-size: 36px; top: -50px; left: 50px;}
+    .content2 p{font-size: 24px;}
+    .content2 p .b_txt{font-size: 32px;}
+    .content2 p .s_txt{font-size: 12px;}
+    
+    .con3_h2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .con3_h2 li{
+        margin-right: 50px;
+    }
+    .con3_h2 span{
+        border-bottom: 2px solid #e30613;
+    }
+    .content3 .con3in{
+        width: calc(100% - 30px);
+    }
+    .con3_list li{
+        width: calc(50% - 10px);
+        height: 350px;
+        overflow: hidden;
+        }
+        .con3_list p{
+            font-size: 14px;
+        }
+        #footer{height: 400px;}
+        .ftin{width: calc(100% - 100px); font-size: 0.6em;}
+        .f_line{
+            width: 50%; right: 0;
+        }
+        .ftxt_l{
+            top: 50px;
+            line-height: 18px;
+        }
+        .ftxt_l li{margin-bottom: 70px;}
+        #footer .pc_bg{display: none;}
+        .ftxt_c{top: 50px; left: 75%; }
+        .ftxt_c h4{font-size: 16px;}
+        .ftxt_c ul{
+            margin-right: 1vw;
+            width: 100px;
+        }
+        .f_sns{top: 230px;}
+        .f_sns ul a li
+        {scale: 0.7;}
+        .mt_bg{
+            display: block;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 20px;
+        }
+}
+/************************************************************** 768끝 */
+/************************************************************** 640 시작 */
+@media all and (max-width: 640px){
+    #header{height: 90px;}
+    .logo{left: 30px;}
+    .gnb{display: none;}
+    .util{display: none;}
+    .open{
+        display: block; right: 30px; top: 50%; transform: translateY(-50%);
+    }
+    .content1{width: calc(100% - 20px); margin: 400px auto 300px auto;}
+    .vd{width: 90%; height: 230px;}
+    .box{top: 1250px; height: 250px;}
+    .con1_txt{
+        font-size: 16px; top: 1415px;
+    }
+    .content1 h2{font-size: 30px; top: -40px; left: 40px;}
+    .content3{margin: 200px auto;}
+    .con3_h2{font-size: 15px;}
+    .con3_h2 li{margin-right: 40px;
+    width: auto}
+    .con3_list li{height: 300px;}
+    .con3_list li div{
+        height: 150px;
+    }
+    .con3_list p{
+        font-size: 12px;
+    }
+    .con3_list h2{
+        font-size: 20px;
+    }
+    .ftin{width: calc(100% - 50px); font-size: 0.5em;}
+    .f_line{display: none;}
+    .ftxt_c h4{font-size: 14px;}
+    .ftxt_c ul{
+    width: 80px;
+    margin-right: 0;
+    }
+    .f_sns ul a li{
+        margin-right: 0;
+        width: 45px;
+        height: 40px;
+    }
+    .f_sns{
+        top: 60%;
+        left: 60%;
+    }
+    .f_linetm{
+        display: block;
+        border-left: 1px solid #fff;
+        position: absolute;
+        height: 80%;
+        left: 50%; transform: translateX(-50%); top: 50px;
+        font-size: 0;
+    }
+    .mobile_bg{
+        width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0; left: 0;
+        font-size: 0;
+        display: none;
+        z-index: 101;
+        opacity: 0;
+    }
+    .mobile{
+        width: 350px;
+        height: 600px;
+        background-color: #e30613;
+        position: fixed;
+        top: 0; right: 0;
+        z-index: 102;
+        display: none;
+        opacity: 0;
+    }
+    .m_header{
+        width: 100%;
+        height: 90px;
+        background-color: #e30613;
+        position: relative;
+    }
+    .m_logo{
+        position: absolute;
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+    .close{position: absolute; right: 30px; top: 50%; transform: translateY(-50%);}
+    .m_gnb{
+        color: #fff; opacity: 0.9;font-size: 14px;
+    }
+    .depth h3{background-color: bisque;}
+    .depth1 li{
+        line-height: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+        width: 130px;
+    }
+    .depth1 li a{
+    margin-left: 30px;
+    }
+    .bglogo{
+        margin-top: 168px;
+    }
+    /* .open:active{
+        padding: 5000px;
+    } */
+    /************************************************************************************************ 모바일메뉴끝 */
+    #m_nav{
+        display: block;
+        width: calc(100% - 100px);
+        font-size: 16px;
+        font-weight: 500;
+        color: #e30613;
+        margin: 0 auto;
+        height: auto;
+        padding-top: 200px;
+    }
+    #m_nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    #m_nav li{
+        border: 1px solid #e30613;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 40px;
+        transition: all 0.53s;
+    }
+    #m_nav li:hover{
+        background-color: #e30613;
+        color: #fff;
+    }
+}
